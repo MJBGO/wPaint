@@ -1,0 +1,25 @@
+{
+  "name": "wPaint",
+  "version": "2.5.0",
+  "homepage": "https://github.com/MJBGO/wPaint",
+  "authors": [
+    "Jean-Baptiste GOMOND <dev@jbgomond.com>"
+  ],
+  "license": "MIT",
+  "main": [
+    "lib/wColorPicker.min.css",
+    "lib/wColorPicker.min.js",
+    "src/wPaint.css",
+    "src/wPaint.js",
+    "src/wPaint.utils.js",
+    "plugins/main/wPaint.menu.main.min.js",
+    "plugins/text/wPaint.menu.text.min.js",
+    "plugins/shapes/wPaint.menu.main.shapes.min.js",
+    "plugins/file/wPaint.menu.main.file.min.js"
+  ],
+  "ignore": [
+    "**/.*",
+    "demo",
+    "test"
+  ]
+}
