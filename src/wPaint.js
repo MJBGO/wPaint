@@ -572,7 +572,12 @@
                     menu.items[key].name = key;
 
                     // use default img if img not set
-                    menu.items[key].img = _this.wPaint.options.path + (menu.items[key].img || menu.img);
+                    if(!menu.items[key].img) {
+                        menu.items[key].img = _this.wPaint.options.path + menu.img;
+                    } else if(menu.items[key].img.indexOf(_this.wPaint.options.path) !== 0) {
+                        // if plugin path does not start by options.path add it
+                        menu.items[key].img = _this.wPaint.options.path + menu.items[key].img;
+                    }
 
                     // make self invoking to avoid overwrites
                     (itemAppend)(menu.items[key]);
