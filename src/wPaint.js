@@ -460,7 +460,7 @@
             factor = factor || 2;
 
             // TODO: set this globally in _drawShapeDown (for some reason colors are being reset due to canvas resize - is there way to permanently set it)
-            this.ctxTemp.fillStyle = this.options.fillStyle;
+            this.ctxTemp.fillStyle = 'transparent';
             this.ctxTemp.strokeStyle = this.options.strokeStyle;
             this.ctxTemp.lineWidth = this.options.lineWidth * factor;
         },
